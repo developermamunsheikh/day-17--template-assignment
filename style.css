@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1240px;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-light{
+    color: white;
+}
+
+.py{
+    padding: 10px 0px 10px 0px;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.header{
+    background-color: #000000;
+    /* padding: 15px 0px; */
+}
+.left-logo img {
+    width: 71px;
+    height: 37px;
+    padding-top: 11px;
+}
+.left-logo{
+    width: 40%;
+}
+.right-menu{
+    width: 60%;
+}
+.right-menu ul {
+    line-height: 58px;
+    
+    
+}
+.right-menu ul li{ 
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    margin-left: -4px;
+
+}
+.right-menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 20px;
+    
+    
+    
+}
+/* DropDown Menu */
+
+.right-menu ul li ul{
+    background-color: black;
+    width: 200px;
+    position: absolute;
+    margin-left: -9px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    
+    
+}
+.right-menu ul li ul li {
+    display: block;
+    margin-left: 0px;
+    
+    
+}
+.right-menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+   transition: .8s;
+   transform: scaleY(1);
+}
+
+.right-menu ul li ul li:hover{
+    background-color: rgb(192, 107, 107);
+    transition: .7s;
+    
+}
+
+
+/* .right-menu ul li a:hover{
+    background-color: #fff;
+    color: black;
+} */
+
+.right-menu ul li a::before{
+    content: "";
+    position: absolute;
+    top:80%;
+    left:17% ;
+    height: 0;
+    width: ; 
+    border-bottom: 4px solid white;
+    
+}
+.right-menu ul li a:hover::before{
+    width: 65%;
+    
+}
+
+/* Banner Section */
+.banner {
+    background-image: url(./a0c6042d4612d7adf44692fffac7e082.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0px;
+}
+.banner h1{
+    padding: 10px 0px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+.banner p{
+    padding: 10px 0px; 
+    font-weight: 900;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button.btn-1 {
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 600;
+}
+button.btn-1:hover {
+   background-color: #fff;
+   color: #000000;
+   transition: .5s;
+}
+
+button.btn-2 {
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: black;
+}
+button.btn-2:hover {
+    background-color: black;
+    color: #fff;
+    transition: .5s;
+    font-size: 600;
+ }
+ /* About Section */
+ .about-section{
+     background-color: #87A471;
+     padding: 60px 0px;
+ }
+ .about-section h1{
+     color: white;
+     width: 180px;
+     margin: auto;
+    margin-bottom: 35px;
+     border-bottom: 3px solid white;
+ }
+ .about-content{
+     width: 55%;
+ }
+ .about-image{
+     width: 40%;
+ }
+ .about-image img{
+     width: 350px;
+     height: auto;
+ }
+ /* Service Section */
+.service-section{
+    background-color: #606A64;
+    padding: 70px 0px;
+}
+.service-section h1{
+    width: 260px;
+    border-bottom: 1px solid #fff;
+    margin: auto;
+    font-weight: 900;
+    font-size: 50px;
+}
+.service-section h3{
+    width: 320px;
+    font-size: 25px;
+    margin: auto;
+    font-weight: 900;
+    margin-top: 15px;
+}
+.service-section .para{
+    width: 820px;
+    font-size: 13px;  
+   font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin-top: 15px;
+}
+
+ .box{
+     width: 30%;
+     background-color: #fff;
+     height: 250px;
+     border-radius: 19px;
+     /* margin-top: 50px; */
+     margin: 30px 20px;
+     box-sizing: border-box;
+     padding: 20px; 
+ }
+ .sub-logo{
+     width: 25%;
+     height: 100%;
+ }
+ .sub-content{
+     width: 60%;
+ }
+ /* portfolio Section */
+ .portfolio{
+     background-color: #87A471;
+     padding: 70px 0px;
+ }
+ .port{
+     border: 1px solid #ddd;
+ }
+ .port-1{
+     width: 45%;
+ }
+ 
+ .port-1 img{
+     width: 580px;
+ }
+
+ .port-2{
+     width: 45%;
+ }
+.mamon{
+    color: #5B757F;
+    padding: 40px 0px;
+    font-size: 28px;
+}
+.port-clr{
+    color: white;
+    font-size: 20px;
+    
+}
+.img-div{
+    margin: 30px;
+    margin-right: 10px;
+}
+.img-div img {
+    padding: 0px 8px;
+    margin-right: 10px;
+}
+
+
+/* Team Section */
+.team-section{
+    background-color: #5B9776;
+    padding: 40px 0px 30px 0px;
+    position: relative;
+}
+.heading-content h1{
+    color: white;   
+}
+.heading-content::before {
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: 44%;
+    border-bottom: 3px solid #ddd;
+    height: 8%;
+    width: 12%;
+}
+.team-img img {
+    padding: 0 20px;
+    padding-top: 75px;
+    
+}
+.icon-1{
+    width: 33%;  
+    font-size: 30px; 
+    color: #fff;
+}
+.icon-2{
+    width: 33%;  
+    font-size: 30px; 
+    color: #fff;  
+}
+.icon-3{
+    width: 33%;   
+    font-size: 30px; 
+    color: #fff;
+    
+}
+.icon-1 i{    
+    padding: 0px 10px;   
+}
+.icon-2 i{    
+    padding: 0px 10px;   
+}
+.icon-3 i{    
+    padding: 0px 10px;   
+}
+.icon-1 i:hover{    
+    color: rgb(59, 59, 56); 
+    transition: .4s; 
+}
+.icon-2 i:hover{    
+    color: rgb(59, 59, 56); 
+    transition: .4s;
+}
+.icon-3 i:hover{    
+    color: rgb(59, 59, 56); 
+    transition: .4s;
+}
+/* Sub Footer Css */
+.sub-footer{
+    background-color: #606A64;
+    padding: 50px 0px;
+}
+
+.sub-footer h1{
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.sub-footer p{
+    color: white;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+.sub-footer .last-btn{
+    text-align: center;
+    margin-top: 14px;
+   
+    ;
+}
+button a{
+    text-decoration: none;
+   color: green;
+    font-size: 18px;
+}
+button a:hover{
+    color: white;  
+    transition: .8s;
+}
+.sub-footer button{
+    width: 160px;
+    height: 46px;
+    background-color: #00BC9C;
+    border-radius: 7px;
+    padding: 5px 15px;
+    
+}
+.sub-footer button:hover{
+  background-color: rgb(46, 46, 39);
+  transition: .8s;  
+}
+.footer{
+    background-color: black;
+    padding: 20px 0px;
+    font-size: 19px;
+}
